@@ -1,4 +1,4 @@
-﻿Console.Clear();
+﻿﻿Console.Clear();
 Console.WriteLine("Estime o seu Custo de Energia");
 Console.WriteLine("Por quantas horas diárias você usa o aparelho?");
 double h;
@@ -11,9 +11,11 @@ double rs;
 rs = Convert.ToDouble(Console.ReadLine()!);
 double custo;
 custo = h * kWh * rs;
+double valortotal;
+valortotal = Math.Round(custo, 2);
 Console.WriteLine("--Custo de Energia--");
 Console.WriteLine($"Consumo do aparelho (em kWh/mês)...: {kWh}");
 Console.WriteLine($"Horas de uso por dia...............: {h}");
 Console.WriteLine($"Custo da energia (em R$/kWh).......: {rs}");
 Console.WriteLine("");
-Console.WriteLine($"Custo estimado: {custo}");
+Console.WriteLine($"Custo estimado: {valortotal}");
